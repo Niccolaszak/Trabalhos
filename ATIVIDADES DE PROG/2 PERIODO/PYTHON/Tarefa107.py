@@ -1,3 +1,3 @@
-import Tarefa107_moeda
+from utilidadesCeV import moeda
 a = int(input("digite um numero: "))
-print(f"O proximo numero é {Tarefa107_moeda.aumentar(a)}, e o numero anterior é {Tarefa107_moeda.diminuir(a)}, o dobro é {Tarefa107_moeda.dobro(a)} e a metade é {Tarefa107_moeda.metade(a)}")
+print(f"O numero -10% é {moeda.aumentar(a,1)}, e o numero -10% é {moeda.diminuir(a,1)}, o dobro é {moeda.dobro(a,1)} e a metade é {moeda.metade(a,1)}")

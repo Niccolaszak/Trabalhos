@@ -30,9 +30,11 @@ class Notebook(Desktop):
         print(f"Sistema Operacional: {self.SO}")
         print(f"Tamanho da tela: {self.Tamanho_tela} Polegadas")
         print(f"Peso: {self.peso}Kgs")
-meu_computador = Computador("Core i5 3600GT", 8, "WINDOWS")
+        
+meu_computador = Computador("Core i5 3600GT", 8, "Windows 10 ")
 meu_desktop = Desktop("Intel Core i7", 16, "Windows 11", 27)
-meu_notebook = Notebook("AMD Ryzen 7", 8, "macOS Monterey", 13.3, 1.5)
+meu_notebook = Notebook("AMD Ryzen 7", 8, "Linux", 13.3, 1.5)
+
 meu_computador.sobre()
 print()
 meu_desktop.sobre()

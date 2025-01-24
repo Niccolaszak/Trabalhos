@@ -1,0 +1,26 @@
+import csv
+
+
+carros = [
+    {"marca": "Nissan", "V.F.": 240, "potencia": 664, "Categoria": "Esportivo"},
+    {"marca": "BMW", "V.F.": 200, "potencia": 300, "Categoria": "Executivo"},
+    {"marca": "Citroen", "V.F.": 150, "potencia": 110, "Categoria": "Sedan"},
+    {"marca": "VW", "V.F.": 300, "potencia": 1100, "Categoria": "Baja"},
+]
+
+arquivo_csv = "carros.csv"
+
+
+with open(arquivo_csv, mode="w", newline="") as arquivo:
+    escritor_csv = csv.DictWriter(arquivo, fieldnames=["marca", "V.F.", "potencia", "Categoria"])
+    
+    
+    escritor_csv.writeheader()
+    
+    
+    for carro in carros:
+        escritor_csv.writerow(carro)
+
+print(f"Arquivo '{arquivo_csv}' criado com sucesso!")
+
+
